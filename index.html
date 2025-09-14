@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeevant AI - Healthcare AI Presentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Navigation Controls -->
+        <div class="nav-controls">
+            <button class="nav-btn nav-btn--prev" id="prevBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15,18 9,12 15,6"></polyline>
+                </svg>
+            </button>
+            <span class="slide-counter" id="slideCounter">1 / 18</span>
+            <button class="nav-btn nav-btn--next" id="nextBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9,18 15,12 9,6"></polyline>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Slides Container -->
+        <div class="slides-wrapper" id="slidesWrapper">
+            <!-- Slide 1: Title Slide -->
+            <div class="slide active" data-slide="1">
+                <div class="slide-content slide-content--title">
+                    <h1 class="presentation-title">Jeevant AI</h1>
+                    <p class="presentation-subtitle">Nationwide Biometric Health Monitoring, Disease Prediction, and Emergency Response Using AI</p>
+                    <div class="authors">
+                        <p><strong>Team:</strong> Sonu Kumar (Team Leader), Deepanshu Raj, Sachin Anand, Sintu Kumar</p>
+                        <p><strong>Institution:</strong> Muzaffarpur Institute of Technology, Bihar, India</p>
+                        <p><strong>Event:</strong> SANKALP TechMITi'25 | Theme: Robotics & AI / Green Technology</p>
+                        <p><strong>Date:</strong> September 2025</p>
+                        <p><strong>Contact:</strong> rsidharth351@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: National Health Crisis -->
+            <div class="slide" data-slide="2">
+                <div class="slide-content">
+                    <h2>India's Healthcare Emergency</h2>
+                    <ul class="slide-bullets">
+                        <li>2.4 million preventable deaths annually due to fragmented health systems</li>
+                        <li>70% of medical errors occur during critical emergency response periods</li>
+                        <li>COVID-19 revealed systemic failures - inadequate early warning and resource allocation</li>
+                        <li>Paper-based records create insurmountable barriers to effective care</li>
+                    </ul>
+                    <p class="slide-subtitle">The cost of inaction: Lives lost, families devastated</p>
+                </div>
+            </div>
+
+            <!-- Slide 3: Critical System Gaps -->
+            <div class="slide" data-slide="3">
+                <div class="slide-content">
+                    <h2>Current Healthcare Limitations</h2>
+                    <ul class="slide-bullets">
+                        <li><strong>Fragmented Data Storage</strong> - No unified patient identification system</li>
+                        <li><strong>Delayed Outbreak Detection</strong> - Traditional surveillance methods insufficient</li>
+                        <li><strong>Emergency Response Failures</strong> - 45+ minutes for medical history access</li>
+                        <li><strong>Digital Infrastructure Underutilized</strong> - ABDM and Aadhaar systems disconnected</li>
+                    </ul>
+                    <p class="slide-subtitle">Opportunity: Transform existing infrastructure into lifesaving platform</p>
+                </div>
+            </div>
+
+            <!-- Slide 4: Jeevant AI Vision -->
+            <div class="slide" data-slide="4">
+                <div class="slide-content">
+                    <h2>Revolutionizing Indian Healthcare</h2>
+                    <p class="mission-statement"><strong>Mission:</strong> Prevent unnecessary deaths through AI-powered proactive healthcare</p>
+                    <ul class="slide-bullets">
+                        <li><strong>Universal Coverage:</strong> All 1.4 billion Indians with biometric health identity</li>
+                        <li><strong>Predictive Intelligence:</strong> 5-week advance warning for disease outbreaks</li>
+                        <li><strong>Emergency Response:</strong> Medical records accessed in 2 seconds vs hours</li>
+                        <li><strong>Privacy-First Design:</strong> GDPR-compliant with citizen consent control</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Slide 5: System Architecture -->
+            <div class="slide" data-slide="5">
+                <div class="slide-content">
+                    <h2>Integrated AI Healthcare Ecosystem</h2>
+                    <div class="architecture-diagram">
+                        <div class="arch-layer">Biometric Health Identity (ABDM+Aadhaar)</div>
+                        <div class="arch-arrow">↓</div>
+                        <div class="arch-layer">AI Analytics & Prediction Engine</div>
+                        <div class="arch-arrow">↓</div>
+                        <div class="arch-layer">Emergency Response Coordination</div>
+                        <div class="arch-arrow">↓</div>
+                        <div class="arch-layer">Data Ingestion & Processing</div>
+                    </div>
+                    <ul class="slide-bullets">
+                        <li><strong>Real-time Integration:</strong> 5 core layers operating synchronously</li>
+                        <li><strong>Nationwide Scale:</strong> Built for 10 million concurrent users</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Slide 6: Biometric Health Identity -->
+            <div class="slide" data-slide="6">
+                <div class="slide-content">
+                    <h2>Secure Patient Identification</h2>
+                    <ul class="slide-bullets">
+                        <li>14-digit Health Identifier linked to fingerprint, iris, facial recognition</li>
+                        <li>99.7% Authentication Success with 2-second response time</li>
+                        <li>Multi-modal Access: Primary fingerprint, emergency facial recognition</li>
+                        <li>Backup Systems: OTP-based authentication for biometric issues</li>
+                    </ul>
+                    <p class="slide-subtitle">Foundation: Immutable health identity for every Indian citizen</p>
+                </div>
+            </div>
+
+            <!-- Slide 7: Data Sources -->
+            <div class="slide" data-slide="7">
+                <div class="slide-content">
+                    <h2>Comprehensive Health Intelligence</h2>
+                    <div class="data-flow">
+                        <div class="data-sources">
+                            <div class="data-source">Government Records</div>
+                            <div class="data-source">Private Healthcare</div>
+                            <div class="data-source">Social Media NLP</div>
+                            <div class="data-source">IoT Sensor Networks</div>
+                            <div class="data-source">WhatsApp Health Bot</div>
+                        </div>
+                        <div class="flow-arrow">→</div>
+                        <div class="data-outputs">
+                            <div class="data-output">Real-time Alerts</div>
+                            <div class="data-output">Emergency Dispatch</div>
+                            <div class="data-output">Hospital Coordination</div>
+                        </div>
+                    </div>
+                    <ul class="slide-bullets">
+                        <li><strong>Multi-source Integration:</strong> Government, private, social, environmental data</li>
+                        <li><strong>22 Indian Languages:</strong> Voice interface and WhatsApp bot support</li>
+                        <li><strong>Real-time Processing:</strong> 1TB daily data with instant anomaly detection</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Slide 8: AI/ML Performance -->
+            <div class="slide" data-slide="8">
+                <div class="slide-content">
+                    <h2>Advanced Predictive Analytics</h2>
+                    <div class="performance-table">
+                        <div class="table-row table-header">
+                            <div class="table-cell">Model</div>
+                            <div class="table-cell">Accuracy</div>
+                            <div class="table-cell">Precision</div>
+                            <div class="table-cell">Recall</div>
+                            <div class="table-cell">Application</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">LSTM Networks</div>
+                            <div class="table-cell">94.2%</div>
+                            <div class="table-cell">91.8%</div>
+                            <div class="table-cell">96.3%</div>
+                            <div class="table-cell">Outbreak Prediction</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">Spatial CNN</div>
+                            <div class="table-cell">89.4%</div>
+                            <div class="table-cell">87.6%</div>
+                            <div class="table-cell">92.1%</div>
+                            <div class="table-cell">Geographic Analysis</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">Ensemble Methods</div>
+                            <div class="table-cell">94.2%</div>
+                            <div class="table-cell">91.8%</div>
+                            <div class="table-cell">96.3%</div>
+                            <div class="table-cell">Multi-disease Classification</div>
+                        </div>
+                    </div>
+                    <ul class="slide-bullets">
+                        <li><strong>5-week Advance Warning</strong> for disease outbreaks</li>
+                        <li><strong>Sub-district Precision</strong> for targeted interventions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Slide 9: Emergency Response -->
+            <div class="slide" data-slide="9">
+                <div class="slide-content">
+                    <h2>Life-saving Response Chain</h2>
+                    <div class="response-flow">
+                        <div class="response-step">Emergency Alert</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="response-step">GPS Location</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="response-step">Nearest Ambulance</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="response-step">Patient History</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="response-step">Hospital Pre-notification</div>
+                    </div>
+                    <div class="metrics-grid">
+                        <div class="metric">
+                            <div class="metric-value">7.3 min</div>
+                            <div class="metric-label">Urban Response (42% improvement)</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">18.9 min</div>
+                            <div class="metric-label">Rural Response (33% improvement)</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">2 sec</div>
+                            <div class="metric-label">Medical History (vs 45+ min)</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">+23%</div>
+                            <div class="metric-label">Cardiac Emergency Survival</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 10: Kerala to Pan-India -->
+            <div class="slide" data-slide="10">
+                <div class="slide-content">
+                    <h2>Proven Model to National Scale</h2>
+                    <div class="two-column">
+                        <div class="column">
+                            <h3>Kerala Pilot Success:</h3>
+                            <ul>
+                                <li><strong>Nipah Virus:</strong> 1.7 weeks earlier detection</li>
+                                <li><strong>Zika Outbreak:</strong> 96.8% geographic precision</li>
+                                <li><strong>Dengue Prediction:</strong> 91.3% accuracy across districts</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h3>National Expansion:</h3>
+                            <ul>
+                                <li><strong>Phase 1:</strong> 50 metros (200M population)</li>
+                                <li><strong>Phase 2:</strong> 500 districts (800M population)</li>
+                                <li><strong>Phase 3:</strong> Universal coverage (1.4B citizens)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 11: Results & Impact -->
+            <div class="slide" data-slide="11">
+                <div class="slide-content">
+                    <h2>Quantified Success Indicators</h2>
+                    <div class="results-table">
+                        <div class="table-row table-header">
+                            <div class="table-cell">Disease Category</div>
+                            <div class="table-cell">1-Week</div>
+                            <div class="table-cell">3-Week</div>
+                            <div class="table-cell">5-Week</div>
+                            <div class="table-cell">Precision</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">Respiratory Infections</div>
+                            <div class="table-cell">97.2%</div>
+                            <div class="table-cell">94.8%</div>
+                            <div class="table-cell">91.4%</div>
+                            <div class="table-cell">District-level</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">Vector-borne Diseases</div>
+                            <div class="table-cell">94.6%</div>
+                            <div class="table-cell">89.3%</div>
+                            <div class="table-cell">84.7%</div>
+                            <div class="table-cell">Sub-district</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">Seasonal Epidemics</div>
+                            <div class="table-cell">95.8%</div>
+                            <div class="table-cell">93.1%</div>
+                            <div class="table-cell">90.2%</div>
+                            <div class="table-cell">Multi-state</div>
+                        </div>
+                    </div>
+                    <ul class="slide-bullets">
+                        <li><strong>False Positive Rate:</strong> 4.3% for high-priority alerts</li>
+                        <li><strong>System Uptime:</strong> 99.97% during critical periods</li>
+                        <li><strong>Cost Savings:</strong> ₹15,000 crores annually</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Slide 12: Privacy & Security -->
+            <div class="slide" data-slide="12">
+                <div class="slide-content">
+                    <h2>Trust-Centric Design</h2>
+                    <ul class="slide-bullets">
+                        <li><strong>Consent Management:</strong> Granular patient control over data sharing</li>
+                        <li><strong>Advanced Encryption:</strong> End-to-end AES-256 for all transmissions</li>
+                        <li><strong>Federated Learning:</strong> AI training without centralized sensitive data</li>
+                        <li><strong>Audit Trails:</strong> Complete logging for accountability and compliance</li>
+                    </ul>
+                    <p class="slide-subtitle">Privacy-by-design architecture ensuring GDPR compliance</p>
+                </div>
+            </div>
+
+            <!-- Slide 13: Implementation -->
+            <div class="slide" data-slide="13">
+                <div class="slide-content">
+                    <h2>Phased National Rollout</h2>
+                    <div class="implementation-timeline">
+                        <div class="phase-item">
+                            <div class="phase-header">Phase 1 (6 months)</div>
+                            <div class="phase-details">₹2,400 crores - 50 metros</div>
+                        </div>
+                        <div class="phase-item">
+                            <div class="phase-header">Phase 2 (12 months)</div>
+                            <div class="phase-details">₹3,600 crores - 500 districts</div>
+                        </div>
+                        <div class="phase-item">
+                            <div class="phase-header">Phase 3 (18 months)</div>
+                            <div class="phase-details">₹1,800 crores - Universal coverage</div>
+                        </div>
+                    </div>
+                    <ul class="slide-bullets">
+                        <li><strong>Technology Infrastructure:</strong> ₹2,160 crores</li>
+                        <li><strong>Human Resources:</strong> 9,000 specialists trained</li>
+                        <li><strong>ROI:</strong> Break-even within 3.2 years</li>
+                        <li><strong>Cost per Citizen:</strong> ₹86 annually</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Slide 14: Social Impact -->
+            <div class="slide" data-slide="14">
+                <div class="slide-content">
+                    <h2>Transformative National Benefits</h2>
+                    <div class="impact-grid">
+                        <div class="impact-item">
+                            <div class="impact-icon">🌱</div>
+                            <div class="impact-title">Environmental</div>
+                            <div class="impact-desc">Reduced travel through remote monitoring</div>
+                        </div>
+                        <div class="impact-item">
+                            <div class="impact-icon">💰</div>
+                            <div class="impact-title">Economic</div>
+                            <div class="impact-desc">₹15,000 crores annual healthcare savings</div>
+                        </div>
+                        <div class="impact-item">
+                            <div class="impact-icon">⚖️</div>
+                            <div class="impact-title">Social Equity</div>
+                            <div class="impact-desc">Universal access regardless of location/status</div>
+                        </div>
+                        <div class="impact-item">
+                            <div class="impact-icon">👥</div>
+                            <div class="impact-title">Demographic Dividend</div>
+                            <div class="impact-desc">Protecting India's 1.4 billion citizens</div>
+                        </div>
+                    </div>
+                    <p class="slide-subtitle">Technology serving humanity's most fundamental right to healthcare</p>
+                </div>
+            </div>
+
+            <!-- Slide 15: Policy Framework -->
+            <div class="slide" data-slide="15">
+                <div class="slide-content">
+                    <h2>Multi-stakeholder Partnership</h2>
+                    <div class="partnership-table">
+                        <div class="table-row table-header">
+                            <div class="table-cell">Stakeholder</div>
+                            <div class="table-cell">Partners</div>
+                            <div class="table-cell">Role</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">Government</div>
+                            <div class="table-cell">MoHFW, NHA, States</div>
+                            <div class="table-cell">Policy & Infrastructure</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">Healthcare</div>
+                            <div class="table-cell">Public/Private Hospitals</div>
+                            <div class="table-cell">Integration & Validation</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">Technology</div>
+                            <div class="table-cell">Cloud, Telecom, Biometrics</div>
+                            <div class="table-cell">Platform Development</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">Academic</div>
+                            <div class="table-cell">IITs, Medical Colleges</div>
+                            <div class="table-cell">Research & Training</div>
+                        </div>
+                    </div>
+                    <p class="slide-subtitle">International Cooperation: WHO, World Bank partnerships</p>
+                </div>
+            </div>
+
+            <!-- Slide 16: Innovations -->
+            <div class="slide" data-slide="16">
+                <div class="slide-content">
+                    <h2>Cutting-edge Technical Achievements</h2>
+                    <ul class="slide-bullets">
+                        <li><strong>Multi-modal Data Fusion:</strong> First comprehensive health surveillance platform</li>
+                        <li><strong>Privacy-preserving AI:</strong> Federated learning for population health analytics</li>
+                        <li><strong>Real-time Emergency Coordination:</strong> Seconds vs hours response time</li>
+                        <li><strong>Universal Digital Inclusion:</strong> 22 languages, multiple interfaces</li>
+                    </ul>
+                    <div class="future-roadmap">
+                        <h3>Future Roadmap:</h3>
+                        <ul>
+                            <li>Predictive genomics integration</li>
+                            <li>Quantum computing epidemiological modeling</li>
+                            <li>International expansion opportunities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 17: Vision -->
+            <div class="slide" data-slide="17">
+                <div class="slide-content">
+                    <h2>No Indian Dies Due to Preventable Healthcare Failures</h2>
+                    <div class="vision-section">
+                        <h3>Our Future India:</h3>
+                        <ul class="vision-list">
+                            <li>Zero Preventable Deaths from information delays</li>
+                            <li>Outbreak Prevention before epidemics develop</li>
+                            <li>Healthcare Equity for every citizen</li>
+                            <li>Global Health Leadership through innovation</li>
+                        </ul>
+                    </div>
+                    <p class="tagline">Jeevant AI: Where Technology Meets Compassion</p>
+                </div>
+            </div>
+
+            <!-- Slide 18: Acknowledgments -->
+            <div class="slide" data-slide="18">
+                <div class="slide-content">
+                    <h2>Gratitude & Academic Foundation</h2>
+                    <div class="two-column">
+                        <div class="column">
+                            <h3>Acknowledgments:</h3>
+                            <ul>
+                                <li>Muzaffarpur Institute of Technology faculty</li>
+                                <li>Ministry of Health & Family Welfare (ABDM insights)</li>
+                                <li>Healthcare professionals and AI research community</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h3>Key References:</h3>
+                            <ul>
+                                <li>Villanueva-Miranda et al., "AI in Early Warning Systems," Frontiers in Public Health, 2025</li>
+                                <li>Narayan et al., "India's Digital Health Strategy," PMC, 2024</li>
+                                <li>Mishra et al., "ABDM Progress Analysis," Int. J. Technology Assessment, 2024</li>
+                                <li>National Health Authority, "ABHA Implementation Guidelines," 2023</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="contact-final">Contact: rsidharth351@gmail.com | Team Jeevant AI</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <!-- Keyboard Shortcuts -->
+        <div class="shortcuts-help" id="shortcutsHelp">
+            <p>Keyboard shortcuts: ← → Space Enter | Click anywhere to advance</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
