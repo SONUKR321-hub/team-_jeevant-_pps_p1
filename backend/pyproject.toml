@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kerala-migrant-health-backend"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi==0.115.0",
+  "uvicorn[standard]==0.30.6",
+  "pydantic==2.9.2",
+  "pydantic-settings==2.6.0",
+  "SQLAlchemy==2.0.36",
+  "psycopg2-binary==2.9.9",
+  "geoalchemy2==0.15.2",
+  "shapely==2.0.6"
+]
+
+[tool.setuptools.packages.find]
+where = ["app"]
